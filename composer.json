@@ -1,0 +1,33 @@
+{
+  "name": "fadriqueclickennet/setting-module",
+  "description": "Setting module for ClickennetCMS. Handles all the site settings.",
+  "keywords": [
+    "clickennet",
+    "settings"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fadriqueclickennet",
+      "email": "fadriqueclickennet@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "composer/installers": "~1.0",
+    "doctrine/dbal": "~2.6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.5",
+    "orchestra/testbench": "3.8.*"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Setting\\": ".",
+      "Modules\\": "Modules/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
